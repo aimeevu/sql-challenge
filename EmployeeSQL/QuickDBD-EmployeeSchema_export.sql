@@ -35,7 +35,7 @@ CREATE TABLE "Dept_Manager" (
     "dept_no" VARCHAR   NOT NULL,
     "emp_no" INT   NOT NULL,
     CONSTRAINT "pk_Dept_Manager" PRIMARY KEY (
-        "dept_no","emp_name"
+        "dept_no","emp_no"
      )
 );
 
