@@ -93,8 +93,3 @@ VALUES
 ('d009', 'Customer Service');
 
 -- Dept_Manager, Dept_Employee, and Salaries table used "Import Data" function in pgAdmin
-
-SELECT * FROM "Dept_Manager"
-
-ALTER TABLE "Dept_Manager"
-RENAME COLUMN emp_name TO emp_no;

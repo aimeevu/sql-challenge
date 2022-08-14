@@ -35,3 +35,30 @@ INNER JOIN "Dept_Employee" AS dept_emp ON emp.emp_no = dept_emp.emp_no
 INNER JOIN "Departments" AS dept ON dept_emp.dept_no = dept.dept_no
 
 -- 5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+SELECT first_name
+	, last_name
+	, sex
+FROM "Employees"
+WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
+
+-- 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+SELECT emp.emp_no
+	, emp.last_name
+	, emp.first_name
+	, dept.dept_name
+FROM "Employees" AS emp
+INNER JOIN "Dept_Employee" AS dept_emp ON emp.emp_no = dept_emp.emp_no
+INNER JOIN "Departments" AS dept ON dept_emp.dept_no = dept.dept_no
+WHERE dept_emp.dept_no = 'd007';
+
+-- 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+SELECT emp.emp_no
+	, emp.last_name
+	, emp.first_name
+	, dept.dept_name
+FROM "Employees" AS emp
+INNER JOIN "Dept_Employee" AS dept_emp ON emp.emp_no = dept_emp.emp_no
+INNER JOIN "Departments" AS dept ON dept_emp.dept_no = dept.dept_no
+WHERE dept_emp.dept_no = 'd007' OR dept_emp.dept_no = 'd005';
+
+-- 8. List the frequency count of employee last names (i.e., how many employees share each last name) in descending order.
