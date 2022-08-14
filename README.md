@@ -38,20 +38,20 @@
 <p>This query performs an INNER JOIN between Employees, Dept_Employee, and Departments tables to find the corresponding department name for each employee</p>
 
 
-5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+5. <b>List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."</b>
 
 <p>This query utilizes the WHERE clause to identify employees that have the first name "Hercules". Last name starting with "B" is found using the pattern matching technique with wildcard characters. This can be written like this: "B%", where it will return any string that starts with the character "B".</p>
 
 
-6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+6. <b>List all employees in the Sales department, including their employee number, last name, first name, and department name.</b>
 
 <p>This query performs an INNER JOIN between Employees, Dept_Employee, and Departments tables, as well as the WHERE claus to find employees in the sales department</p>
 
-7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+7. <b>List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.</b>
 
 <p> This query is similar to #6, but in addition to the WHERE clause filtering for employees in the sales department, it also has a condition to include any employees that are from the development department.</p>
 
-8. List the frequency count of employee last names (i.e., how many employees share each last name) in descending order.
+8. <b>List the frequency count of employee last names (i.e., how many employees share each last name) in descending order.</b>
 
 <p>This query utilizes the GROUP BY and COUNT clause to identify the unique last names and the count of each last name. Then it uses ORDER BY clause to group the list in descending order.</p>
 
